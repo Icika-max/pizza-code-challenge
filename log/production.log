@@ -1,0 +1,35 @@
+I, [2023-03-21T00:10:21.611519 #59135]  INFO -- : [fc0b6ed2-56ef-425d-9999-a3cc12d248d6] Started GET "/" for 127.0.0.1 at 2023-03-21 00:10:21 +0300
+F, [2023-03-21T00:10:21.612618 #59135] FATAL -- : [fc0b6ed2-56ef-425d-9999-a3cc12d248d6]   
+[fc0b6ed2-56ef-425d-9999-a3cc12d248d6] ActionController::RoutingError (No route matches [GET] "/"):
+[fc0b6ed2-56ef-425d-9999-a3cc12d248d6]   
+I, [2023-03-21T00:10:46.494212 #59135]  INFO -- : [6bd8bd16-eb0f-4661-8ecf-badbf86e62e7] Started GET "/" for 127.0.0.1 at 2023-03-21 00:10:46 +0300
+F, [2023-03-21T00:10:46.494617 #59135] FATAL -- : [6bd8bd16-eb0f-4661-8ecf-badbf86e62e7]   
+[6bd8bd16-eb0f-4661-8ecf-badbf86e62e7] ActionController::RoutingError (No route matches [GET] "/"):
+[6bd8bd16-eb0f-4661-8ecf-badbf86e62e7]   
+I, [2023-03-21T00:11:46.026743 #59421]  INFO -- : [f2f1d21e-142e-4b34-a20f-dfc0a4db7a44] Started GET "/" for 127.0.0.1 at 2023-03-21 00:11:46 +0300
+F, [2023-03-21T00:11:46.027488 #59421] FATAL -- : [f2f1d21e-142e-4b34-a20f-dfc0a4db7a44]   
+[f2f1d21e-142e-4b34-a20f-dfc0a4db7a44] ActionController::RoutingError (No route matches [GET] "/"):
+[f2f1d21e-142e-4b34-a20f-dfc0a4db7a44]   
+I, [2023-03-21T00:12:00.603837 #59421]  INFO -- : [62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385] Started GET "/restaurants/1" for 127.0.0.1 at 2023-03-21 00:12:00 +0300
+I, [2023-03-21T00:12:00.605659 #59421]  INFO -- : [62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385] Processing by RestaurantsController#show as HTML
+I, [2023-03-21T00:12:00.605722 #59421]  INFO -- : [62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385]   Parameters: {"id"=>"1"}
+I, [2023-03-21T00:12:00.614511 #59421]  INFO -- : [62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385] Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.5ms | Allocations: 2154)
+F, [2023-03-21T00:12:00.615450 #59421] FATAL -- : [62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385]   
+[62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385] ActiveRecord::StatementInvalid (Could not find table 'restaurants'):
+[62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385]   
+[62d0dd6b-7dc9-4a6a-9996-7b7ea2a3f385] app/controllers/restaurants_controller.rb:8:in `show'
+I, [2023-03-21T00:12:44.440537 #59609]  INFO -- : [23bec8ff-c416-4737-aea8-e1d90e008cb2] Started GET "/" for 127.0.0.1 at 2023-03-21 00:12:44 +0300
+F, [2023-03-21T00:12:44.441112 #59609] FATAL -- : [23bec8ff-c416-4737-aea8-e1d90e008cb2]   
+[23bec8ff-c416-4737-aea8-e1d90e008cb2] ActionController::RoutingError (No route matches [GET] "/"):
+[23bec8ff-c416-4737-aea8-e1d90e008cb2]   
+I, [2023-03-21T00:15:30.135890 #60169]  INFO -- : [8c798e23-f3d2-4815-a5ed-de00a277a9dc] Started GET "/" for 127.0.0.1 at 2023-03-21 00:15:30 +0300
+F, [2023-03-21T00:15:30.136365 #60169] FATAL -- : [8c798e23-f3d2-4815-a5ed-de00a277a9dc]   
+[8c798e23-f3d2-4815-a5ed-de00a277a9dc] ActionController::RoutingError (No route matches [GET] "/"):
+[8c798e23-f3d2-4815-a5ed-de00a277a9dc]   
+I, [2023-03-21T00:15:49.751494 #60169]  INFO -- : [46e7e4a4-77b4-4c73-952e-d22b8120daef] Started GET "/restaurants" for 127.0.0.1 at 2023-03-21 00:15:49 +0300
+I, [2023-03-21T00:15:49.752870 #60169]  INFO -- : [46e7e4a4-77b4-4c73-952e-d22b8120daef] Processing by RestaurantsController#index as */*
+I, [2023-03-21T00:15:49.757363 #60169]  INFO -- : [46e7e4a4-77b4-4c73-952e-d22b8120daef] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms | Allocations: 2073)
+F, [2023-03-21T00:15:49.758388 #60169] FATAL -- : [46e7e4a4-77b4-4c73-952e-d22b8120daef]   
+[46e7e4a4-77b4-4c73-952e-d22b8120daef] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: restaurants):
+[46e7e4a4-77b4-4c73-952e-d22b8120daef]   
+[46e7e4a4-77b4-4c73-952e-d22b8120daef] app/controllers/restaurants_controller.rb:4:in `index'
