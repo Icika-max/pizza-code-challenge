@@ -2,10 +2,6 @@
 
 one:
   price: 1
-  restaurant: one
-  pizza: one
 
 two:
   price: 1
-  restaurant: two
-  pizza: two
