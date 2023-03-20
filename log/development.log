@@ -1036,3 +1036,20 @@ Processing by RestaurantPizzasController#create as */*
 Completed 200 OK in 134ms (Views: 9.0ms | ActiveRecord: 14.8ms | Allocations: 14821)
 
 
+Started GET "/" for 127.0.0.1 at 2023-03-21 00:19:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 498)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3743)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2023-03-21 00:19:38 +0300
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/controllers/restaurants_controller.rb:4:in `index'
+No serializer found for resource: #<Restaurant id: 2, name: "PizzArte", address: "69 W 55th St, New York, NY 10019", created_at: "2023-03-20 19:40:39.913552000 +0000", updated_at: "2023-03-20 19:40:39.913552000 +0000">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Restaurant::ActiveRecord_Relation (2.6ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 1.1ms | Allocations: 9728)
+
+
