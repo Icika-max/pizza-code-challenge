@@ -1,4 +1,8 @@
 Restaurant Api
+
+# To access the api use the following link
+https://pizza-sdqg.onrender.com/restaurants
+
 # Rails Practice Challenge - Apartments
 This is a backend project made by Ruby On Rails. It provides all data belonging to `Restaurant`, `Pizza` and its joining table `Restaurant_pizza`
 ## Setup
